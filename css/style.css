@@ -1,5 +1,5 @@
 body {
-  background-color: #989da6;
+  background-color: #FAFAFA;
   font-family: Neuton, serif;
   font-size: 16px;
   font-weight: 300;
@@ -32,7 +32,7 @@ h4 {
 
 .button.evohealth {
   display: inline-block;
-  background-color: #222c3c;
+  background-color: #93634a;
   color: #ffffff;
   font-weight: 400;
   padding: 10px;
@@ -48,7 +48,7 @@ h4 {
 
 .button.contact {
   display: inline-block;
-  background-color: #222c3c;
+  background-color: #93634a;
   color: #ffffff;
   font-weight: 400;
   padding: 10px;
@@ -64,7 +64,7 @@ h4 {
 
 .button.resume {
   display: inline-block;
-  background-color: #222c3c;
+  background-color: #93634a;
   color: #ffffff;
   font-weight: 400;
   padding: 10px;
