@@ -30,6 +30,24 @@ h4 {
   font-weight: 400;
 }
 
+a {
+  color: #93634a;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #222C3C;
+}
+
+a:hover {
+  color: #93634a;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #222C3C;
+}
+
 .button.evohealth {
   display: inline-block;
   background-color: #93634a;
