@@ -95,3 +95,69 @@ a:active {
   opacity: 0.8;
   text-decoration: none;
 }
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+header {
+  background-color: #ae9789;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  box-shadow: 2px 2px 5px 2px rgba(50, 50, 50, 0.75);
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #222c3c;
+}
+
+#hero {
+  background-color: #FAFAFA;
+  padding-top: 133px;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+
+#hero h1 {
+  margin: 0;
+  padding: 0.67em 0;
+}
+
+main {
+  padding-top: 133px;
+}
+
+#work {
+  background-color: #FAFAFA;
+}
+
+#contact {
+  background-color: #ae9789;
+  padding: 0.67em;
+  box-shadow: 2px 2px 5px 2px rgba(50, 50, 50, 0.75);
+}
