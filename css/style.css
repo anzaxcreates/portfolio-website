@@ -127,12 +127,12 @@ a:active {
 
 /* Layout styling */
 .container {
-  padding: 0 15px;
-  margin: auto;
+  padding: 15px;
+  padding-right: 15px;
 }
 
 .row {
-  margin: 25px 0;
+  margin: 20px 0;
 }
 
 h1 {
@@ -142,7 +142,6 @@ h1 {
 header {
   background-color: #ae9789;
   text-align: center;
-  padding: 10px 0 4px;
   position: fixed;
   width: 100%;
   display: inline-block;
@@ -152,7 +151,7 @@ header {
 
 #hero {
   background-color: #FAFAFA;
-  padding-top: 133px;
+  padding-top: 115px;
   display: inline-block;
   text-align: center;
   width: 100%;
@@ -164,7 +163,7 @@ header {
 }
 
 main {
-  padding-top: 133px;
+  padding-top: 130px;
 }
 
 #work {
@@ -184,7 +183,7 @@ main {
 }
 
 #relevantskills {
-  text-align: center;
+  text-align: left;
 }
 
 #relevantskills ul {
@@ -192,7 +191,7 @@ main {
 }
 
 #tools {
-  text-align: center;
+  text-align: left;
 }
 
 #tools ul {
@@ -221,6 +220,7 @@ nav > ul > li > a {
 
 footer#contact {
   background-color: #ae9789;
+  text-align: center;
   padding: 0.67em;
   margin-top: 20px;
   box-shadow: 2px 2px 5px 2px rgba(50, 50, 50, 0.75);
@@ -238,17 +238,18 @@ Medium devices (640px and larger)
   }
 
   main {
-    padding-top: 180px;
+    padding-top: 110px;
   }
 
   nav {
     width: auto;
     float: right;
-    margin-top: 4px;
+    margin: 0px;
+    height: -10px;
   }
 
   nav > ul {
-    margin: 1em 0;
+    margin: -5em 0.75em;
   }
 
   nav > ul > li {
@@ -267,20 +268,32 @@ Medium devices (640px and larger)
 
   [class*="col-"] {
     float: left;
-    padding-left: 14px;
-    padding-right: 14px;
+    padding-left: 10px;
+    padding-right: 60px;
   }
 
   .row::after {
     content: "";
     clear: both;
     display: table;
-    padding-top: 10px;
   }
 
   #about-page h2 {
     margin-top: 0;
   }
+
+  .columns {
+    float: center;
+    width: 25%;
+    padding: 8px 10px;
+    opacity: .8;
+    background-color: grey;
+    border: 2px solid #eee;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
 }
 
 /* ==============================
