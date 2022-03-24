@@ -202,11 +202,8 @@ main {
 
 nav > ul {
   list-style-type: none;
-  padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  padding-left: 0px;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -216,6 +213,34 @@ nav > ul > li > a {
   color: #222c3c;
 }
 
+.navtoggle,
+.navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .menuicon {
+  position: absolute;
+  top: 50px;
+  font-size: 40px;
+  padding-right: 10px;
+}
+
+.navtoggle.responsive nav {
+  padding: 12px 0 0;
+}
+
+.navtoggle.responsive li {
+  display: inline-block;
+  text-align: right;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child {
+  padding: 0 0 10px;
+}
+
+
 /* footer styling */
 
 footer#contact {
@@ -224,6 +249,22 @@ footer#contact {
   padding: 0.67em;
   margin-top: 20px;
   box-shadow: 2px 2px 5px 2px rgba(50, 50, 50, 0.75);
+}
+
+/* ==============================
+Small devices (smaller than 640px)
+================================= */
+/*----Vela Media queries-----------*/
+@media only screen and (max-width: 640px) {
+  .vela-friends-img {
+    width: 100%;
+  }
+  .navtoggle li:last-child {
+  display: inline-block;
+  }
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
 }
 
 /* ==============================
@@ -244,8 +285,7 @@ Medium devices (640px and larger)
   nav {
     width: auto;
     float: right;
-    margin: 0px;
-    height: -10px;
+    height: 10px;
   }
 
   nav > ul {
@@ -253,8 +293,15 @@ Medium devices (640px and larger)
   }
 
   nav > ul > li {
-    display: inline-block;
-    padding: 0px;
+  display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+  .navtoggle li:last-child {
+  display: inline-block;
   }
 
   #hero span {
@@ -317,6 +364,15 @@ Large devices (1024px or larger)
     margin-left: auto;
     margin-right: auto;
   }
+
+  .navtoggle li:not(:last-child) {
+  display: none;
+  }
+
+  .navtoggle li:last-child {
+  display: inline-block;
+  }
+
 }
 
 .button:hover {
