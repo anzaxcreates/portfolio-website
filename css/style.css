@@ -3,12 +3,12 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: #dcd3c9;
   font-family: Neuton, serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
-  color: #222C3C;
+  color: #000;
 }
 
 body {
@@ -19,12 +19,15 @@ body {
   overflow-x: hidden;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 90%;
 }
 
 h1 {
-  font size: 2.75em;
+  font-size: 2.75em;
   font-weight: 700;
 }
 
@@ -44,31 +47,31 @@ h4 {
 }
 
 a {
-  color: #93634a;
+  color: #000;
   text-decoration: none;
 }
 
 a:visited {
-  color: #222C3C;
+  color: #000;
 }
 
 a:hover {
-  color: #93634a;
+  color: #dcd3c9;
   text-decoration: underline;
 }
 
 a:active {
-  color: #222C3C;
+  color: #000;
 }
 
 .button.evohealth {
   display: inline-block;
-  background-color: #93634a;
-  color: #ffffff;
+  background-color: #dcd3c9;
+  color: #000;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid # #a19e9f;
+  border-bottom: 2px solid #dcd3c9;
   transition: 0.2s opacity;
 }
 
@@ -79,12 +82,12 @@ a:active {
 
 .button.contact {
   display: inline-block;
-  background-color: #93634a;
-  color: #ffffff;
+  background-color: #dcd3c9;
+  color: #000;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid # #a19e9f;
+  border-bottom: 2px solid #dcd3c9;
   transition: 0.2s opacity;
 }
 
@@ -95,12 +98,12 @@ a:active {
 
 .button.resume {
   display: inline-block;
-  background-color: #93634a;
-  color: #ffffff;
+  background-color: #dcd3c9;
+  color: #000;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid # #a19e9f;
+  border-bottom: 2px solid #dcd3c9;
   transition: 0.2s opacity;
 }
 
@@ -111,12 +114,12 @@ a:active {
 
 .button.cssproject {
   display: inline-block;
-  background-color: #93634a;
-  color: #ffffff;
+  background-color: #dcd3c9;
+  color: #000;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid # #a19e9f;
+  border-bottom: 2px solid #dcd3c9;
   transition: 0.2s opacity;
 }
 
@@ -140,7 +143,7 @@ h1 {
 }
 
 header {
-  background-color: #ae9789;
+  background-color: #fff;
   text-align: center;
   position: fixed;
   width: 100%;
@@ -150,7 +153,7 @@ header {
 }
 
 #hero {
-  background-color: #FAFAFA;
+  background-color: #fff;
   padding-top: 115px;
   display: inline-block;
   text-align: center;
@@ -168,14 +171,14 @@ main {
 
 #work {
   text-align: center;
-  background-color: #FAFAFA;
+  background-color: #fff;
   padding-top: 50px;
 }
 
 .row {
   margin: 5px 0;
   display: inline-block;
-  width: 100%
+  width: 100%;
 }
 
 #work.row {
@@ -199,10 +202,8 @@ main {
 }
 
 /* nav styling */
-
 nav > ul {
   list-style-type: none;
-  padding-left: 0px;
   margin: 0;
 }
 
@@ -233,18 +234,16 @@ nav > ul > li > a {
   display: inline-block;
   text-align: right;
   padding: 10px 0;
-  border-top: 1px solid rgba(255,127,80,0.5);
+  border-top: 1px solid rgba(255, 127, 80, 0.5);
 }
 
 .navtoggle.responsive li:last-child {
   padding: 0 0 10px;
 }
 
-
 /* footer styling */
-
 footer#contact {
-  background-color: #ae9789;
+  background-color: #fff;
   text-align: center;
   padding: 0.67em;
   margin-top: 20px;
@@ -254,14 +253,15 @@ footer#contact {
 /* ==============================
 Small devices (smaller than 640px)
 ================================= */
-/*----Vela Media queries-----------*/
 @media only screen and (max-width: 640px) {
   .vela-friends-img {
     width: 100%;
   }
+
   .navtoggle li:last-child {
-  display: inline-block;
+    display: inline-block;
   }
+
   .navtoggle li:not(:last-child) {
     display: none;
   }
@@ -271,7 +271,6 @@ Small devices (smaller than 640px)
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
-
   header {
     text-align: unset;
     padding: 20px 0 13px;
@@ -293,7 +292,7 @@ Medium devices (640px and larger)
   }
 
   nav > ul > li {
-  display: inline-block;
+    display: inline-block;
   }
 
   .navtoggle li:not(:last-child) {
@@ -301,7 +300,7 @@ Medium devices (640px and larger)
   }
 
   .navtoggle li:last-child {
-  display: inline-block;
+    display: inline-block;
   }
 
   #hero span {
@@ -333,14 +332,14 @@ Medium devices (640px and larger)
     float: center;
     width: 25%;
     padding: 8px 10px;
-    opacity: .8;
+    opacity: 0.8;
     background-color: grey;
     border: 2px solid #eee;
     text-align: center;
     box-sizing: border-box;
     -webkit-transition: 0.3s;
     transition: 0.3s;
-}
+  }
 }
 
 /* ==============================
@@ -366,13 +365,12 @@ Large devices (1024px or larger)
   }
 
   .navtoggle li:not(:last-child) {
-  display: none;
+    display: none;
   }
 
   .navtoggle li:last-child {
-  display: inline-block;
+    display: inline-block;
   }
-
 }
 
 .button:hover {
@@ -380,34 +378,31 @@ Large devices (1024px or larger)
 }
 
 /* svg clouds */
-
-.container-cloud{
-	height:0px;
+.container-cloud {
   width: 100px;
-	position: relative;
-	width:100%;
-	padding-top: 10%;
-
+  position: relative;
+  padding-top: 10%;
 }
+
 .svg-cloud01 {
-	width:60%;
-	height: 150%;
-	fill: #2980b9;
-	top:0;
-	left:-100px;
-	z-index:100;
-	overflow-x:hidden;
+  width: 60%;
+  height: 150%;
+  fill: #2980b9;
+  top: 0;
+  left: -100px;
+  z-index: 100;
+  overflow-x: hidden;
   animation: 10s cloud-move infinite alternate linear;
 }
 
 .svg-cloud02 {
-	width:30%;
-	height:100%;
-	fill:#2980b9;
-	top:100px;
-	left:-50px;
-	z-index: 200;
-	overflow-x: hidden;
+  width: 30%;
+  height: 100%;
+  fill: #2980b9;
+  top: 100px;
+  left: -50px;
+  z-index: 200;
+  overflow-x: hidden;
   animation: 20s cloud-move infinite alternate linear;
 }
 
@@ -416,13 +411,22 @@ Large devices (1024px or larger)
 }
 
 /* Animation for the clouds */
-
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
